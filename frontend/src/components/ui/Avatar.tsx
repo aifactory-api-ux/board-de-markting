@@ -24,7 +24,7 @@ export function Avatar({ name, src, size = 40, className }: AvatarProps) {
         height: size,
         borderRadius: '50%',
         backgroundColor: tokens.colors.primary,
-        color: 'white',
+        color: tokens.colors.surface,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',

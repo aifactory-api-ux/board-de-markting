@@ -29,7 +29,7 @@ export const config = {
 };
 
 export function validateEnv(): void {
-  const required = ['DATABASE_URL', 'JWT_SECRET', 'S3_BUCKET', 'S3_REGION', 'S3_ACCESS_KEY_ID', 'S3_SECRET_ACCESS_KEY'];
+  const required = ['DATABASE_URL', 'JWT_SECRET'];
   const missing = required.filter((key) => !process.env[key]);
   if (missing.length > 0) {
     throw new Error(`Missing required environment variables: ${missing.join(', ')}`);

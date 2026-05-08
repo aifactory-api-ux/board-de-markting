@@ -39,7 +39,7 @@ export function Button({
   };
 
   const variantStyles = {
-    primary: { backgroundColor: tokens.colors.primary, color: '#fff' },
+    primary: { backgroundColor: tokens.colors.primary, color: tokens.colors.surface },
     secondary: { backgroundColor: 'transparent', color: tokens.colors.text_primary, border: `1px solid ${tokens.colors.border}` },
     ghost: { backgroundColor: 'transparent', color: tokens.colors.text_secondary },
     icon: { backgroundColor: 'transparent', color: tokens.colors.text_secondary, padding: tokens.spacing.sm },

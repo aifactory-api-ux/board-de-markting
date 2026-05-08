@@ -19,7 +19,7 @@ export function Tooltip({ content, children, className }: TooltipProps) {
             sideOffset={5}
             style={{
               backgroundColor: tokens.colors.secondary,
-              color: 'white',
+              color: tokens.colors.surface,
               padding: `${tokens.spacing.xs} ${tokens.spacing.sm}`,
               borderRadius: tokens.radii.sm,
               fontSize: tokens.typography.small.size,

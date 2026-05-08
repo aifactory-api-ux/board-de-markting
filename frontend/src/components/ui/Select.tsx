@@ -42,7 +42,7 @@ export function Select({
           fontSize: tokens.typography.body.size,
           fontFamily: tokens.typography.font_family,
           outline: 'none',
-          backgroundColor: 'white',
+          backgroundColor: tokens.colors.surface,
           cursor: disabled ? 'not-allowed' : 'pointer',
         }}
       >

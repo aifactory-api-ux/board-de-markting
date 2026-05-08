@@ -26,7 +26,7 @@ export function TopNavBar({ user, onLogout, notifications, onNotificationClick, 
           <button onClick={() => {}} style={{ background: 'none', border: 'none', cursor: 'pointer', position: 'relative' }}>
             <span style={{ fontSize: 20 }}>🔔</span>
             {unreadCount > 0 && (
-              <span style={{ position: 'absolute', top: -4, right: -4, backgroundColor: tokens.colors.danger, color: 'white', borderRadius: '50%', width: 16, height: 16, fontSize: 10, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <span style={{ position: 'absolute', top: -4, right: -4, backgroundColor: tokens.colors.danger, color: tokens.colors.surface, borderRadius: '50%', width: 16, height: 16, fontSize: 10, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 {unreadCount}
               </span>
             )}
