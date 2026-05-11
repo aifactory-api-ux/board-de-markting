@@ -1,4 +1,4 @@
-import { Routes as RouteList } from './App';
+import App from './App';
 
 export const routes = {
   login: '/login',

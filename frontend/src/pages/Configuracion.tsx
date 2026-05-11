@@ -14,7 +14,7 @@ export default function Configuracion() {
     <div style={{ minHeight: '100vh', backgroundColor: tokens.colors.background }}>
       <TopNavBar user={user} onLogout={logout} onSearch={() => {}} notifications={[]} onNotificationClick={() => {}} />
       <div style={{ padding: tokens.spacing.lg, maxWidth: 600, margin: '0 auto' }}>
-        <h1 style={{ margin: 0, marginBottom: tokens.spacing.lg, fontSize: tokens.typography.h1.size, fontWeight: 600, color: tokens.colors.text_primary }}>Settings</h1>
+        <h1 style={{ margin: 0, marginBottom: tokens.spacing.lg, fontSize: tokens.typography.headings.h1.size, fontWeight: 600, color: tokens.colors.text_primary }}>Settings</h1>
         <div style={{ backgroundColor: tokens.colors.surface, padding: tokens.spacing.lg, borderRadius: tokens.radii.lg, boxShadow: tokens.shadows.card }}>
           <h2 style={{ margin: 0, marginBottom: tokens.spacing.md, fontSize: tokens.typography.h3.size, fontWeight: 600, color: tokens.colors.text_primary }}>Profile</h2>
           <TextField label="Name" value={user.name} onChange={() => {}} />
