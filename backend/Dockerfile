@@ -4,6 +4,7 @@ COPY package*.json ./
 RUN npm ci
 COPY backend/ ./backend/
 WORKDIR /app/backend
+RUN npm ci
 RUN npm run build
 
 FROM node:20-alpine
