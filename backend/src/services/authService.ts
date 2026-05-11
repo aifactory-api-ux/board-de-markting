@@ -2,7 +2,7 @@ import { AppDataSource } from '../config/db';
 import { User } from '../models/User';
 import * as jwt from '../utils/jwt';
 import { hashPassword, comparePassword } from '../utils/password';
-import { config } from '../../../shared/config';
+import { config } from '../../shared/config';
 
 const userRepository = AppDataSource.getRepository(User);
 
