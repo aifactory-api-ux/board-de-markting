@@ -1,5 +1,5 @@
 import AWS from 'aws-sdk';
-import { config } from '../../shared/config';
+import { config } from '../../../shared/config';
 
 const s3 = new AWS.S3({
   region: config.s3.region,
