@@ -6,7 +6,7 @@ import { ContentCard } from '../models/ContentCard';
 import { Attachment } from '../models/Attachment';
 import { Tag } from '../models/Tag';
 import { Notification } from '../models/Notification';
-import { config } from '../../shared/config';
+import { config } from '../shared/config';
 
 export const AppDataSource = new DataSource({
   type: 'postgres',

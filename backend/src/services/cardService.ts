@@ -1,6 +1,6 @@
 import { AppDataSource } from '../config/db';
 import { ContentCard } from '../models/ContentCard';
-import { Paginated } from '../../../shared/types';
+import { Paginated } from '../shared/types';
 
 const cardRepository = AppDataSource.getRepository(ContentCard);
 

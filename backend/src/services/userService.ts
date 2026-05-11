@@ -1,7 +1,7 @@
 import { AppDataSource } from '../config/db';
 import { User } from '../models/User';
 import { hashPassword } from '../utils/password';
-import { Paginated } from '../../../shared/types';
+import { Paginated } from '../shared/types';
 
 const userRepository = AppDataSource.getRepository(User);
 
