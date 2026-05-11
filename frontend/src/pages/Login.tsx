@@ -17,7 +17,7 @@ export default function Login() {
   return (
     <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: tokens.colors.background }}>
       <div style={{ backgroundColor: tokens.colors.surface, padding: tokens.spacing.xl, borderRadius: tokens.radii.lg, boxShadow: tokens.shadows.card, width: '100%', maxWidth: 400 }}>
-        <h1 style={{ margin: 0, marginBottom: tokens.spacing.lg, fontSize: tokens.typography.h1.size, fontWeight: 600, color: tokens.colors.text_primary, textAlign: 'center' }}>
+        <h1 style={{ margin: 0, marginBottom: tokens.spacing.lg, fontSize: tokens.typography.headings.h1.size, fontWeight: 600, color: tokens.colors.text_primary, textAlign: 'center' }}>
           Board Marketing
         </h1>
         <form onSubmit={handleLogin}>

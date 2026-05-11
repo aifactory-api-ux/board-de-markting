@@ -44,7 +44,7 @@ export default function DetalleTarjeta() {
     <div style={{ minHeight: '100vh', backgroundColor: tokens.colors.background, padding: tokens.spacing.lg }}>
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: tokens.spacing.lg }}>
-          <h1 style={{ margin: 0, fontSize: tokens.typography.h1.size, fontWeight: 600, color: tokens.colors.text_primary }}>Card Details</h1>
+          <h1 style={{ margin: 0, fontSize: tokens.typography.headings.h1.size, fontWeight: 600, color: tokens.colors.text_primary }}>Card Details</h1>
           <Button variant="secondary" onClick={() => navigate('/')}>Back to Board</Button>
         </div>
         <div style={{ backgroundColor: tokens.colors.surface, padding: tokens.spacing.lg, borderRadius: tokens.radii.lg, boxShadow: tokens.shadows.card }}>
