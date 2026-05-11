@@ -1,7 +1,7 @@
 FROM node:20-alpine AS builder
 WORKDIR /app
-COPY backend/package*.json ./backend/
-RUN npm ci
+COPY backend/package*.json ./
+RUN npm install
 COPY backend/ ./backend/
 COPY shared/ ./shared/
 WORKDIR /app/backend
