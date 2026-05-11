@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken';
-import { config } from '../../../shared/config';
+import { config } from '../../shared/config';
 
 export interface TokenPayload {
   userId: string;
