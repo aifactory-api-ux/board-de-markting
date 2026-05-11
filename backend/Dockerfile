@@ -4,7 +4,7 @@ COPY backend/package*.json ./backend/
 WORKDIR /app/backend
 RUN npm ci
 COPY backend/ ./backend/
-COPY shared/ ./shared/
+COPY ../shared/ ./shared/
 RUN npm run build
 
 FROM node:20-alpine
