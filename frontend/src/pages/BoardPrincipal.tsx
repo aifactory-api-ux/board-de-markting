@@ -5,19 +5,19 @@ import { useBoard } from '../hooks/useBoard';
 import { useKanban } from '../hooks/useKanban';
 import { useCards } from '../hooks/useCards';
 import { useNotifications } from '../hooks/useNotifications';
-import TopNavBar from '../components/ui/TopNavBar';
-import KanbanColumn from '../components/ui/KanbanColumn';
-import Modal from '../components/ui/Modal';
-import Button from '../components/ui/Button';
-import TextField from '../components/ui/TextField';
-import TextArea from '../components/ui/TextArea';
-import Loader from '../components/shared/Loader';
+import { TopNavBar } from '../components/ui/TopNavBar';
+import { KanbanColumn } from '../components/ui/KanbanColumn';
+import { Modal } from '../components/ui/Modal';
+import { Button } from '../components/ui/Button';
+import { TextField } from '../components/ui/TextField';
+import { TextArea } from '../components/ui/TextArea';
+import { Loader } from '../components/shared/Loader';
 import { ContentCard } from '../components/ui/ContentCard';
 
 export default function BoardPrincipal() {
   const { user, logout } = useAuth();
   const { boards, currentBoard, fetchBoards, selectBoard, createBoard } = useBoard();
-  const { columns, fetchColumns, addColumn } = useKanban();
+  const { columns, fetchColumns } = useKanban();
   const { cards, fetchCards, createCard } = useCards();
   const { notifications, fetchNotifications, markRead } = useNotifications();
   const [showNewBoardModal, setShowNewBoardModal] = useState(false);
