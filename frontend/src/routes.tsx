@@ -1,5 +1,3 @@
-import App from './App';
-
 export const routes = {
   login: '/login',
   home: '/',

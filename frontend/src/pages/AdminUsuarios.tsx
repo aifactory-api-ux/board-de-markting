@@ -90,7 +90,7 @@ export default function AdminUsuarios() {
         <Select
           label="Role"
           value={newRole}
-          onChange={(v) => setNewRole(v as any)}
+          onChange={(v: string) => setNewRole(v as 'admin' | 'editor' | 'viewer')}
           options={[
             { value: 'admin', label: 'Admin' },
             { value: 'editor', label: 'Editor' },

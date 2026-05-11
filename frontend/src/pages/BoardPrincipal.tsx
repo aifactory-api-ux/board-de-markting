@@ -12,7 +12,7 @@ import { Button } from '../components/ui/Button';
 import { TextField } from '../components/ui/TextField';
 import { TextArea } from '../components/ui/TextArea';
 import { Loader } from '../components/shared/Loader';
-import { ContentCard } from '../components/ui/ContentCard';
+
 
 export default function BoardPrincipal() {
   const { user, logout } = useAuth();
