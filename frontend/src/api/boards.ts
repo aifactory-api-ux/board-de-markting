@@ -1,5 +1,5 @@
 import apiClient from './client';
-import { Board, BoardMetrics } from '../../../shared/types';
+import type { Board, BoardMetrics } from '../utils/apiTypes';
 
 export const boardsApi = {
   getAll: async (): Promise<Board[]> => {

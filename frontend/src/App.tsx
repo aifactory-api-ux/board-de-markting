@@ -5,7 +5,7 @@ import BoardPrincipal from './pages/BoardPrincipal';
 import DetalleTarjeta from './pages/DetalleTarjeta';
 import AdminUsuarios from './pages/AdminUsuarios';
 import Configuracion from './pages/Configuracion';
-import Loader from './components/shared/Loader';
+import { Loader } from './components/shared/Loader';
 import ErrorBoundary from './components/shared/ErrorBoundary';
 
 function ProtectedRoute({ children }: { children: React.ReactNode }) {

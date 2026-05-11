@@ -1,5 +1,5 @@
 import apiClient from './client';
-import { Attachment } from '../../../shared/types';
+import type { Attachment } from '../utils/apiTypes';
 
 export const attachmentsApi = {
   upload: async (cardId: string, file: File): Promise<Attachment> => {

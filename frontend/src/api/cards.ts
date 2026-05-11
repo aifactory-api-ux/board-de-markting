@@ -1,5 +1,5 @@
 import apiClient from './client';
-import { ContentCard, Paginated } from '../../../shared/types';
+import type { ContentCard, Paginated } from '../utils/apiTypes';
 
 export const cardsApi = {
   getByBoard: async (boardId: string, columnId?: string, page: number = 1, pageSize: number = 50): Promise<Paginated<ContentCard>> => {
