@@ -1,11 +1,11 @@
 FROM node:20-alpine AS builder
 WORKDIR /app
 COPY backend/package*.json ./
-RUN npm install
+RUN npm install --ignore-scripts
 COPY backend/ ./backend/
 COPY shared/ ./shared/
 WORKDIR /app/backend
-RUN npm run build
+RUN npx tsc
 
 FROM node:20-alpine
 WORKDIR /app
