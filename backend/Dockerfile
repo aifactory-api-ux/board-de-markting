@@ -1,9 +1,11 @@
 FROM node:20-alpine
 WORKDIR /app
-COPY backend/package*.json ./
+COPY package*.json ./
 RUN npm ci
-COPY backend/ ./backend/
-COPY shared/ ./shared/
+COPY . .
+RUN mkdir -p /app/backend && mkdir -p /app/shared && \
+    cp -r backend/* /app/backend/ && \
+    cp -r shared/* /app/shared/
 RUN cd backend && npm run build
 EXPOSE 4000
 CMD ["node", "backend/dist/index.js"]
