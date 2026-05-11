@@ -1,12 +1,12 @@
 import { tokens } from '../../styles/tokens';
-import { KanbanColumn as KanbanColumnType, ContentCard as ContentCardType } from '../../../../shared/types';
+import type { KanbanColumn as KanbanColumnType, ContentCard as ContentCardType } from '../../utils/apiTypes';
 import { ContentCard } from './ContentCard';
 import { classNames } from '../../utils/classNames';
 
 export interface KanbanColumnProps {
   column: KanbanColumnType;
   cards: ContentCardType[];
-  onCardDrop: (cardId: string, toColumnId: string, toIndex: number) => void;
+  onCardDrop?: (cardId: string, toColumnId: string, toIndex: number) => void;
   onAddCard: () => void;
   onEditColumn?: () => void;
   onDeleteColumn?: () => void;

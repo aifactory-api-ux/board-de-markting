@@ -1,5 +1,5 @@
 import { tokens } from '../../styles/tokens';
-import { User, Notification } from '../../../../shared/types';
+import type { User, Notification } from '../../utils/apiTypes';
 import { Avatar } from './Avatar';
 import { Badge } from './Badge';
 import { classNames } from '../../utils/classNames';

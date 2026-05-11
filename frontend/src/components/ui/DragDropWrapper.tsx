@@ -7,7 +7,7 @@ export interface DragDropWrapperProps {
   className?: string;
 }
 
-export function DragDropWrapper({ children, onDragEnd, className }: DragDropWrapperProps) {
+export function DragDropWrapper({ children, className }: DragDropWrapperProps) {
   return (
     <div className={classNames('drag-drop-wrapper', className)} style={{ display: 'flex', gap: tokens.spacing.md, overflowX: 'auto', padding: tokens.spacing.md }}>
       {children}

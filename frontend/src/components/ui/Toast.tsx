@@ -27,10 +27,6 @@ export function Toast({ message, type, open, onClose, className }: ToastProps) {
 }
 
 export function ToastProvider({ children }: { children: React.ReactNode }) {
-  const [open, setOpen] = useState(false);
-  const [message, setMessage] = useState('');
-  const [type, setType] = useState<'info' | 'success' | 'warning' | 'danger'>('info');
-
   return (
     <ToastPrimitive.Provider swipeDirection="right">
       {children}
