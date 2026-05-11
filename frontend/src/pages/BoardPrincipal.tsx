@@ -78,7 +78,7 @@ export default function BoardPrincipal() {
       <TopNavBar user={user} onLogout={logout} onSearch={() => {}} notifications={notifications} onNotificationClick={handleNotificationClick} />
       <div style={{ padding: tokens.spacing.lg }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: tokens.spacing.lg }}>
-          <h1 style={{ margin: 0, fontSize: tokens.typography.h1.size, fontWeight: 600, color: tokens.colors.text_primary }}>Boards</h1>
+          <h1 style={{ margin: 0, fontSize: tokens.typography.headings.h1.size, fontWeight: 600, color: tokens.colors.text_primary }}>Boards</h1>
           <Button variant="primary" onClick={() => setShowNewBoardModal(true)}>+ New Board</Button>
         </div>
         <div style={{ display: 'flex', gap: tokens.spacing.md, overflowX: 'auto' }}>

@@ -3,18 +3,18 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { tokens } from '../styles/tokens';
 import { useCards } from '../hooks/useCards';
 import { useAuth } from '../hooks/useAuth';
-import Button from '../components/ui/Button';
-import TextField from '../components/ui/TextField';
-import TextArea from '../components/ui/TextArea';
-import Select from '../components/ui/Select';
-import Loader from '../components/shared/Loader';
-import Modal from '../components/ui/Modal';
+import { Button } from '../components/ui/Button';
+import { TextField } from '../components/ui/TextField';
+import { TextArea } from '../components/ui/TextArea';
+import { Select } from '../components/ui/Select';
+import { Loader } from '../components/shared/Loader';
+import { Modal } from '../components/ui/Modal';
 
 export default function DetalleTarjeta() {
   const { cardId } = useParams<{ cardId: string }>();
   const navigate = useNavigate();
-  const { currentCard, fetchCards, updateCard, deleteCard } = useCards();
-  const { user } = useAuth();
+  const { fetchCards, updateCard, deleteCard } = useCards();
+  const { } = useAuth();
   const [loading, setLoading] = useState(true);
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
