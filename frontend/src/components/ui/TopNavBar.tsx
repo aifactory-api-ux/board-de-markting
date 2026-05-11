@@ -19,7 +19,7 @@ export function TopNavBar({ user, onLogout, notifications, onNotificationClick, 
   return (
     <nav className={classNames('top-nav-bar', className)} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: `${tokens.spacing.md} ${tokens.spacing.lg}`, backgroundColor: tokens.colors.surface, borderBottom: `1px solid ${tokens.colors.border}` }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: tokens.spacing.md }}>
-        <h1 style={{ margin: 0, fontSize: tokens.typography.h2.size, fontWeight: 600, color: tokens.colors.primary }}>Board Marketing</h1>
+        <h1 style={{ margin: 0, fontSize: tokens.typography.headings.h2.size, fontWeight: 600, color: tokens.colors.primary }}>Board Marketing</h1>
       </div>
       <div style={{ display: 'flex', alignItems: 'center', gap: tokens.spacing.lg }}>
         <div style={{ position: 'relative' }}>

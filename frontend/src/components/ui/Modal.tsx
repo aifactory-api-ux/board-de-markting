@@ -39,7 +39,7 @@ export function Modal({ open, title, children, onClose, actions, className }: Mo
               leaveTo="opacity-0 scale-95"
             >
               <Dialog.Panel style={{ backgroundColor: tokens.colors.surface, borderRadius: tokens.radii.lg, padding: tokens.spacing.lg, width: '100%', maxWidth: 500, boxShadow: tokens.shadows.modal, margin: tokens.spacing.lg }}>
-                <Dialog.Title style={{ fontSize: tokens.typography.h2.size, fontWeight: 600, color: tokens.colors.text_primary, marginBottom: tokens.spacing.md }}>
+                <Dialog.Title style={{ fontSize: tokens.typography.headings.h2.size, fontWeight: 600, color: tokens.colors.text_primary, marginBottom: tokens.spacing.md }}>
                   {title}
                 </Dialog.Title>
                 <div>{children}</div>

@@ -17,7 +17,7 @@ export function KanbanColumn({ column, cards, onCardDrop, onAddCard, onEditColum
   return (
     <div className={classNames('kanban-column', className)} style={{ minWidth: 300, maxWidth: 300, backgroundColor: tokens.colors.background, borderRadius: tokens.radii.lg, padding: tokens.spacing.md }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: tokens.spacing.md }}>
-        <h3 style={{ margin: 0, fontSize: tokens.typography.h3.size, fontWeight: 600, color: tokens.colors.text_primary }}>
+        <h3 style={{ margin: 0, fontSize: tokens.typography.headings.h3.size, fontWeight: 600, color: tokens.colors.text_primary }}>
           {column.name}
         </h3>
         <span style={{ fontSize: tokens.typography.small.size, color: tokens.colors.text_secondary, backgroundColor: tokens.colors.surface, padding: `2px ${tokens.spacing.sm}`, borderRadius: tokens.radii.sm }}>

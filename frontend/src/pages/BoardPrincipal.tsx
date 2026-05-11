@@ -103,7 +103,7 @@ export default function BoardPrincipal() {
         {currentBoard && (
           <>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: tokens.spacing.xl, marginBottom: tokens.spacing.md }}>
-              <h2 style={{ margin: 0, fontSize: tokens.typography.h2.size, fontWeight: 600, color: tokens.colors.text_primary }}>{currentBoard.name}</h2>
+              <h2 style={{ margin: 0, fontSize: tokens.typography.headings.h2.size, fontWeight: 600, color: tokens.colors.text_primary }}>{currentBoard.name}</h2>
               <Button variant="secondary" onClick={() => {}}>+ Add Column</Button>
             </div>
             <div style={{ display: 'flex', gap: tokens.spacing.md, overflowX: 'auto' }}>

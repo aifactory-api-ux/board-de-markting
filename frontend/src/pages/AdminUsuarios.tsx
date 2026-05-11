@@ -49,7 +49,7 @@ export default function AdminUsuarios() {
       <TopNavBar user={user} onLogout={logout} onSearch={() => {}} notifications={[]} onNotificationClick={() => {}} />
       <div style={{ padding: tokens.spacing.lg, maxWidth: 1200, margin: '0 auto' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: tokens.spacing.lg }}>
-          <h1 style={{ margin: 0, fontSize: tokens.typography.h1.size, fontWeight: 600, color: tokens.colors.text_primary }}>User Management</h1>
+          <h1 style={{ margin: 0, fontSize: tokens.typography.headings.h1.size, fontWeight: 600, color: tokens.colors.text_primary }}>User Management</h1>
           <Button variant="primary" onClick={() => setShowCreateModal(true)}>+ Add User</Button>
         </div>
         <div style={{ backgroundColor: tokens.colors.surface, borderRadius: tokens.radii.lg, boxShadow: tokens.shadows.card, overflow: 'hidden' }}>
