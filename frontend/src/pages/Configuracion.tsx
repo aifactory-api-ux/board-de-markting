@@ -1,9 +1,9 @@
 import { tokens } from '../styles/tokens';
 import { useAuth } from '../hooks/useAuth';
-import TopNavBar from '../components/ui/TopNavBar';
-import Button from '../components/ui/Button';
-import TextField from '../components/ui/TextField';
-import Loader from '../components/shared/Loader';
+import { TopNavBar } from '../components/ui/TopNavBar';
+import { Button } from '../components/ui/Button';
+import { TextField } from '../components/ui/TextField';
+import { Loader } from '../components/shared/Loader';
 
 export default function Configuracion() {
   const { user, logout } = useAuth();
