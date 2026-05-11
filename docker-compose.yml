@@ -21,10 +21,9 @@ services:
 
   backend:
     build:
-      context: ./backend
-      dockerfile: Dockerfile
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
+      context: .
+      dockerfile: backend/Dockerfile
+
     environment:
       NODE_ENV: production
       PORT: 4000
