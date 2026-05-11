@@ -11,4 +11,4 @@ export type {
   Notification,
   BoardMetrics,
   Paginated,
-} from '../../../shared/types';
+} from '../shared/types';
