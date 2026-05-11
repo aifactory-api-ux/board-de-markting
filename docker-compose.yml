@@ -3,7 +3,6 @@ version: '3.8'
 services:
   postgres:
     image: postgres:15-alpine
-
     environment:
       POSTGRES_USER: boarduser
       POSTGRES_PASSWORD: boardpassword
@@ -23,7 +22,6 @@ services:
     build:
       context: .
       dockerfile: backend/Dockerfile
-
     environment:
       NODE_ENV: production
       PORT: 4000
@@ -53,7 +51,6 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-
     ports:
       - "80:80"
     depends_on:
