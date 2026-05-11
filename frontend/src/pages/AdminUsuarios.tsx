@@ -2,18 +2,18 @@ import { useEffect, useState } from 'react';
 import { tokens } from '../styles/tokens';
 import { useUsers } from '../hooks/useUsers';
 import { useAuth } from '../hooks/useAuth';
-import TopNavBar from '../components/ui/TopNavBar';
-import Button from '../components/ui/Button';
-import TextField from '../components/ui/TextField';
-import Select from '../components/ui/Select';
-import Pagination from '../components/ui/Pagination';
-import Modal from '../components/ui/Modal';
-import Loader from '../components/shared/Loader';
-import { User } from '../../../shared/types';
+import { TopNavBar } from '../components/ui/TopNavBar';
+import { Button } from '../components/ui/Button';
+import { TextField } from '../components/ui/TextField';
+import { Select } from '../components/ui/Select';
+import { Pagination } from '../components/ui/Pagination';
+import { Modal } from '../components/ui/Modal';
+import { Loader } from '../components/shared/Loader';
+import type { User } from '../utils/apiTypes';
 
 export default function AdminUsuarios() {
   const { user, logout } = useAuth();
-  const { users, loading, fetchUsers, createUser, updateUser, deleteUser } = useUsers();
+  const { users, loading, fetchUsers, createUser, deleteUser } = useUsers();
   const [page, setPage] = useState(1);
   const [showCreateModal, setShowCreateModal] = useState(false);
   const [newName, setNewName] = useState('');
