@@ -1,5 +1,5 @@
 import apiClient from './client';
-import { Tag } from '../../../shared/types';
+import type { Tag } from '../utils/apiTypes';
 
 export const tagsApi = {
   getAll: async (): Promise<Tag[]> => {

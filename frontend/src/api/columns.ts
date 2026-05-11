@@ -1,5 +1,5 @@
 import apiClient from './client';
-import { KanbanColumn } from '../../../shared/types';
+import type { KanbanColumn } from '../utils/apiTypes';
 
 export const columnsApi = {
   getByBoard: async (boardId: string): Promise<KanbanColumn[]> => {

@@ -1,5 +1,5 @@
 import apiClient from './client';
-import { Notification } from '../../../shared/types';
+import type { Notification } from '../utils/apiTypes';
 
 export const notificationsApi = {
   getAll: async (): Promise<Notification[]> => {

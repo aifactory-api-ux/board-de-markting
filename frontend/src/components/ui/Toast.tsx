@@ -1,7 +1,6 @@
 import { tokens } from '../../styles/tokens';
 import { classNames } from '../../utils/classNames';
 import * as ToastPrimitive from '@radix-ui/react-toast';
-import { useState } from 'react';
 
 export interface ToastProps {
   message: string;

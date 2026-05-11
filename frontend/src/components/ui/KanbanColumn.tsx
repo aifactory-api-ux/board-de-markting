@@ -13,7 +13,7 @@ export interface KanbanColumnProps {
   className?: string;
 }
 
-export function KanbanColumn({ column, cards, onCardDrop, onAddCard, onEditColumn, onDeleteColumn, className }: KanbanColumnProps) {
+export function KanbanColumn({ column, cards, onAddCard, onEditColumn, onDeleteColumn, className }: KanbanColumnProps) {
   return (
     <div className={classNames('kanban-column', className)} style={{ minWidth: 300, maxWidth: 300, backgroundColor: tokens.colors.background, borderRadius: tokens.radii.lg, padding: tokens.spacing.md }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: tokens.spacing.md }}>

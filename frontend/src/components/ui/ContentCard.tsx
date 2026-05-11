@@ -1,5 +1,5 @@
 import { tokens } from '../../styles/tokens';
-import { ContentCard as ContentCardType } from '../../../../shared/types';
+import type { ContentCard as ContentCardType } from '../../utils/apiTypes';
 import { classNames } from '../../utils/classNames';
 
 export interface ContentCardProps {
@@ -45,7 +45,7 @@ export function ContentCard({ card, onClick, onEdit, onDelete, dragging, classNa
       )}
       {card.tags && card.tags.length > 0 && (
         <div style={{ display: 'flex', gap: tokens.spacing.xs, flexWrap: 'wrap' }}>
-          {card.tags.map((tag, i) => (
+          {card.tags.map((tag: string, i: number) => (
             <span key={i} style={{ fontSize: tokens.typography.caption.size, padding: `2px ${tokens.spacing.xs}`, backgroundColor: tokens.colors.background, borderRadius: tokens.radii.sm }}>
               {tag}
             </span>

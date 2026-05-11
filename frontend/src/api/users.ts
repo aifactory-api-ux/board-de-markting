@@ -1,5 +1,5 @@
 import apiClient from './client';
-import { User, Paginated } from '../../../shared/types';
+import type { User, Paginated } from '../utils/apiTypes';
 
 export const usersApi = {
   getAll: async (page: number = 1, pageSize: number = 10): Promise<Paginated<User>> => {
