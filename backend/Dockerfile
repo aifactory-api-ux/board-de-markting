@@ -3,6 +3,7 @@ WORKDIR /app
 COPY backend/package*.json ./
 RUN npm ci
 COPY backend/ ./backend/
+COPY shared/ ./shared/
 WORKDIR /app/backend
 RUN npm run build
 
