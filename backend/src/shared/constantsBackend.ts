@@ -1,4 +1,2 @@
-import pkg from '../../../package.json' assert { type: 'json' };
-
-export const PACKAGE_VERSION = pkg.version;
+export const PACKAGE_VERSION = '1.0.0';
 export const NODE_VERSION = process.version;
